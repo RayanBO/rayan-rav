@@ -15,13 +15,6 @@ const DESIGN = [
 
 const PRODUCTIVITY = [
 	{
-		name: 'Arc',
-		description: 'Browser',
-		href: 'https://arc.net/',
-		iconPath: 'arc',
-		iconBgColour: '#414350'
-	},
-	{
 		name: 'Notion',
 		description: 'Note Taking',
 		href: 'https://www.notion.so/product',
@@ -34,6 +27,13 @@ const PRODUCTIVITY = [
 		href: 'https://obsidian.md/',
 		iconPath: 'obsidian',
 		iconBgColour: '#7A3EE8'
+	},
+	{
+		name: 'ChatGPT',
+		description: 'AI',
+		href: 'https://chat.openai.com/',
+		iconPath: 'chatgpt',
+		iconBgColour: '#06A67F'
 	}
 ]
 
@@ -46,18 +46,18 @@ const DEVELOPMENT = [
 		iconBgColour: '#2C2C32'
 	},
 	{
-		name: 'ChatGPT',
-		description: 'AI',
-		href: 'https://chat.openai.com/',
-		iconPath: 'chatgpt',
-		iconBgColour: '#06A67F'
-	}
+		name: 'Github',
+		description: 'Plateforme de développement collaboratif',
+		href: 'https://github.com/',
+		iconPath: 'github',
+		iconBgColour: '#2C2C32'
+	},
 ]
 ---
 
 <PageLayout meta={{ title: 'Home' }}>
 	<div class='w-full'>
-		<Button title='Back' href='/' style='button'>
+		<Button title='Retour' href='/' style='button'>
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
 				width='14'
@@ -75,13 +75,13 @@ const DEVELOPMENT = [
 
 		<div class='mt-5 flex w-full flex-col gap-y-10'>
 			<div>
-				<h1 class='mb-1 text-2xl font-bold'>Tools</h1>
-				<p>Tools and software I use daily</p>
+				<h1 class='mb-1 text-2xl font-bold'>Outils</h1>
+				<p>Outils et logiciels que j'utilise quotidiennement 😇</p>
 			</div>
 
 			<ToolSection title='Design' tools={DESIGN} />
-			<ToolSection title='Productivity' tools={PRODUCTIVITY} />
-			<ToolSection title='Development' tools={DEVELOPMENT} />
+			<ToolSection title='Productivité' tools={PRODUCTIVITY} />
+			<ToolSection title='Développement' tools={DEVELOPMENT} />
 		</div>
 	</div>
 </PageLayout>
